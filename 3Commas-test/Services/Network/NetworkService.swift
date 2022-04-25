@@ -1,7 +1,7 @@
 import Foundation
 
 protocol INetworkService {
-    func getData<T: Decodable>( request: URLRequest, completionHandler: @escaping (Result<T, NetworkServiceError>) -> ())
+    func getData<T: Decodable>( request: URLRequest, completionHandler: @escaping (Result<T, NetworkError>) -> ())
 }
 
 class NetworkService: INetworkService {
@@ -12,7 +12,7 @@ class NetworkService: INetworkService {
 
     func getData<T: Decodable>(
         request: URLRequest,
-        completionHandler: @escaping (Result<T, NetworkServiceError>) -> ()
+        completionHandler: @escaping (Result<T, NetworkError>) -> ()
     ) {
 
         let session = URLSession.shared
@@ -31,8 +31,6 @@ class NetworkService: INetworkService {
             }
             guard let httpResponse = response as? HTTPURLResponse,
                   (200...299).contains(httpResponse.statusCode) else {
-
-              //TODO: other codes
                 completionHandler(.failure(.badResponse))
                 return
             }

@@ -14,15 +14,17 @@ class FeedCell: UITableViewCell {
     // MARK: - Properties
 
     static let identifier = String(describing: FeedCell.self)
-    var imageProvider: ImageProvider?
 
     // MARK: - Setup views
 
-    func configure(with photoPost: Photo, completion: @escaping (Int) -> Bool) {
+    func configure(
+        with photoPost: Photo,
+        imageProvider: ImageProvider,
+        completion: @escaping (Int) -> Bool
+    ) {
         let stringURL = photoPost.urlM
         setupViews()
 
-        guard let imageProvider = imageProvider else { return }
         imageProvider.getImage(stringURL: stringURL) { (image) in
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
