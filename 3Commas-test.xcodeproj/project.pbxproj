@@ -12,6 +12,8 @@
 		E66A387F2817344A003C8E44 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A387E2817344A003C8E44 /* ViewFactory.swift */; };
 		E66A388228173D95003C8E44 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A388128173D95003C8E44 /* ImageProvider.swift */; };
 		E66A388428173DB7003C8E44 /* FeedProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A388328173DB7003C8E44 /* FeedProvider.swift */; };
+		E66A388A28174482003C8E44 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A388928174482003C8E44 /* FeedPresenter.swift */; };
+		E66A388E28175E75003C8E44 /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A388D28175E75003C8E44 /* PostPresenter.swift */; };
 		E6ED9AFA28158E6F0033BC8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED9AF928158E6F0033BC8B /* AppDelegate.swift */; };
 		E6ED9AFC28158E6F0033BC8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED9AFB28158E6F0033BC8B /* SceneDelegate.swift */; };
 		E6ED9AFE28158E6F0033BC8B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED9AFD28158E6F0033BC8B /* FeedViewController.swift */; };
@@ -19,7 +21,7 @@
 		E6ED9B0628158E700033BC8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6ED9B0428158E700033BC8B /* LaunchScreen.storyboard */; };
 		E6ED9B112815A1660033BC8B /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED9B102815A1660033BC8B /* FeedModel.swift */; };
 		E6ED9B142815A7940033BC8B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED9B132815A7940033BC8B /* NetworkService.swift */; };
-		E6ED9B162815A7A60033BC8B /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED9B152815A7A60033BC8B /* NetworkServiceError.swift */; };
+		E6ED9B162815A7A60033BC8B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED9B152815A7A60033BC8B /* NetworkError.swift */; };
 		E6ED9B182815A7B50033BC8B /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED9B172815A7B50033BC8B /* ImageDownloader.swift */; };
 		E6ED9B1A2815A7C70033BC8B /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED9B192815A7C70033BC8B /* FeedService.swift */; };
 		E6ED9B232815B62E0033BC8B /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6ED9B222815B62E0033BC8B /* FeedCell.swift */; };
@@ -37,6 +39,8 @@
 		E66A387E2817344A003C8E44 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		E66A388128173D95003C8E44 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 		E66A388328173DB7003C8E44 /* FeedProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedProvider.swift; sourceTree = "<group>"; };
+		E66A388928174482003C8E44 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		E66A388D28175E75003C8E44 /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
 		E6ED9AF628158E6F0033BC8B /* 3Commas-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3Commas-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6ED9AF928158E6F0033BC8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6ED9AFB28158E6F0033BC8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +50,7 @@
 		E6ED9B0728158E700033BC8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6ED9B102815A1660033BC8B /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 		E6ED9B132815A7940033BC8B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		E6ED9B152815A7A60033BC8B /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
+		E6ED9B152815A7A60033BC8B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E6ED9B172815A7B50033BC8B /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		E6ED9B192815A7C70033BC8B /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 		E6ED9B222815B62E0033BC8B /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		E66A387B28172C5A003C8E44 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E6ED9B2F281678E70033BC8B /* PostViewController.swift */,
 				E66A387C28172C7E003C8E44 /* PostView.swift */,
 			);
 			path = View;
@@ -93,6 +98,46 @@
 				E66A388328173DB7003C8E44 /* FeedProvider.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E66A3885281741AE003C8E44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED9B1F2815B6110033BC8B /* Cell */,
+				E6ED9AFD28158E6F0033BC8B /* FeedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E66A3887281741C4003C8E44 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E66A388928174482003C8E44 /* FeedPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E66A3888281741D0003C8E44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6ED9B102815A1660033BC8B /* FeedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E66A388B2817591D003C8E44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E66A388C28175923003C8E44 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E66A388D28175E75003C8E44 /* PostPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		E6ED9AED28158E6F0033BC8B = {
@@ -115,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				E6ED9B292815BA470033BC8B /* Helpers */,
-				E6ED9B0F2815A1430033BC8B /* Models */,
 				E6ED9B0E2815A1360033BC8B /* Services */,
 				E6ED9B0D2815A1230033BC8B /* Scenes */,
 				E6ED9AF928158E6F0033BC8B /* AppDelegate.swift */,
@@ -147,19 +191,11 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		E6ED9B0F2815A1430033BC8B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E6ED9B102815A1660033BC8B /* FeedModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		E6ED9B122815A7890033BC8B /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				E6ED9B132815A7940033BC8B /* NetworkService.swift */,
-				E6ED9B152815A7A60033BC8B /* NetworkServiceError.swift */,
+				E6ED9B152815A7A60033BC8B /* NetworkError.swift */,
 				E6ED9B172815A7B50033BC8B /* ImageDownloader.swift */,
 				E6ED9B192815A7C70033BC8B /* FeedService.swift */,
 			);
@@ -169,18 +205,19 @@
 		E6ED9B1E2815B6010033BC8B /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				E6ED9AFD28158E6F0033BC8B /* FeedViewController.swift */,
-				E6ED9B1F2815B6110033BC8B /* Views */,
+				E66A3885281741AE003C8E44 /* View */,
+				E66A3888281741D0003C8E44 /* Model */,
+				E66A3887281741C4003C8E44 /* Presenter */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
 		};
-		E6ED9B1F2815B6110033BC8B /* Views */ = {
+		E6ED9B1F2815B6110033BC8B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				E6ED9B222815B62E0033BC8B /* FeedCell.swift */,
 			);
-			path = Views;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E6ED9B242815B8030033BC8B /* AlertService */ = {
@@ -205,8 +242,9 @@
 		E6ED9B2E281678470033BC8B /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				E66A388C28175923003C8E44 /* Presenter */,
+				E66A388B2817591D003C8E44 /* Model */,
 				E66A387B28172C5A003C8E44 /* View */,
-				E6ED9B2F281678E70033BC8B /* PostViewController.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -290,9 +328,10 @@
 				E6ED9B142815A7940033BC8B /* NetworkService.swift in Sources */,
 				E6ED9B232815B62E0033BC8B /* FeedCell.swift in Sources */,
 				E6ED9B30281678E70033BC8B /* PostViewController.swift in Sources */,
-				E6ED9B162815A7A60033BC8B /* NetworkServiceError.swift in Sources */,
+				E6ED9B162815A7A60033BC8B /* NetworkError.swift in Sources */,
 				E6ED9B1A2815A7C70033BC8B /* FeedService.swift in Sources */,
 				E6ED9B182815A7B50033BC8B /* ImageDownloader.swift in Sources */,
+				E66A388A28174482003C8E44 /* FeedPresenter.swift in Sources */,
 				E6ED9B3228167E4F0033BC8B /* UIStackView+Helpers.swift in Sources */,
 				E6ED9AFE28158E6F0033BC8B /* FeedViewController.swift in Sources */,
 				E6ED9B2B2815BA520033BC8B /* UIColor+Helpers.swift in Sources */,
@@ -300,6 +339,7 @@
 				E6ED9B2D2815BB9F0033BC8B /* UIView+Helper.swift in Sources */,
 				E66A387F2817344A003C8E44 /* ViewFactory.swift in Sources */,
 				E6ED9AFA28158E6F0033BC8B /* AppDelegate.swift in Sources */,
+				E66A388E28175E75003C8E44 /* PostPresenter.swift in Sources */,
 				E66A387A28172275003C8E44 /* ViewControllerFactory.swift in Sources */,
 				E66A388428173DB7003C8E44 /* FeedProvider.swift in Sources */,
 				E6ED9AFC28158E6F0033BC8B /* SceneDelegate.swift in Sources */,

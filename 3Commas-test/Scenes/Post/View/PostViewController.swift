@@ -4,17 +4,16 @@ class PostViewController: UIViewController {
 
     // MARK: - Properties
 
-    private let screenWidth = UIScreen.width
-    private let imageProvider: ImageProvider
+    private var presenter: PostPresenterProtocol
     private let mainView: IPostView
     private let photoUrl: String
 
     // MARK: - Life cycle
 
-    init(photoUrl: String, imageProvider: ImageProvider, postView: IPostView) {
+    init(photoUrl: String, presenter: PostPresenterProtocol, postView: IPostView) {
         self.mainView = postView
         self.photoUrl = photoUrl
-        self.imageProvider = imageProvider
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -35,12 +34,13 @@ class PostViewController: UIViewController {
 
     private func fetchPhoto() {
         mainView.activityIndicator.startAnimating()
-        imageProvider.getImage(stringURL: photoUrl) { (image) in
-            DispatchQueue.main.async { [weak self] in
-                guard let self = self else { return }
-                self.mainView.postImage.image = image
-                self.mainView.activityIndicator.stopAnimating()
-            }
-        }
+        presenter.fetchPhoto(photoUrl: photoUrl)
+    }
+}
+
+extension PostViewController: PostPresenterDelegate {
+    func presentPhoto(photo: UIImage) {
+        self.mainView.postImage.image = photo
+        self.mainView.activityIndicator.stopAnimating()
     }
 }

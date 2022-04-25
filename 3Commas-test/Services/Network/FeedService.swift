@@ -21,7 +21,7 @@ class FeedService: FeedProvider {
 
     func getData(
         page: Int,
-        completionHandler: @escaping (Result<FeedModel, NetworkServiceError>) -> ()
+        completionHandler: @escaping (Result<FeedModel, NetworkError>) -> ()
     ) {
         isPaginating = true
         queryItems.append(URLQueryItem(name: "page", value: "\(page)"))

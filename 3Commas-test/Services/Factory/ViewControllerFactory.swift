@@ -9,15 +9,19 @@ enum ViewControllerFactory: Factory {
     static func makeFeedViewController() -> UIViewController {
         let networkService = NetworkService.shared
         let feedProvider = FeedService(networkService: networkService)
-        let factory = ViewControllerFactory.self
-        let viewController = FeedViewController(feedService: feedProvider, factory: factory)
+        let presenter = FeedPresenter(feedService: feedProvider)
+        let imageProvider = ImageDownloader.shared
+        let viewController = FeedViewController(presenter: presenter, imageProvider: imageProvider)
+        presenter.delegate = viewController
         return viewController
     }
 
     static func makePostViewController(post: Photo) -> UIViewController {
         let imageProvider = ImageDownloader.shared
         let view: IPostView = ViewFactory.makePostView(post: post)
-        let viewController = PostViewController(photoUrl: post.urlM, imageProvider: imageProvider, postView: view)
+        let presenter = PostPresenter(imageProvider: imageProvider)
+        let viewController = PostViewController(photoUrl: post.urlM, presenter: presenter, postView: view)
+        presenter.delegate = viewController
         return viewController
     }
 }
