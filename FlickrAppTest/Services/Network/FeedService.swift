@@ -1,7 +1,7 @@
 import Foundation
 
 class FeedService: FeedProvider {
-    private var queryItems: [URLQueryItem] = [
+    private let queryItems: [URLQueryItem] = [
         URLQueryItem(name: "method", value: "flickr.interestingness.getList"),
         URLQueryItem(name: "api_key", value: "72c24febb369aa46b6860a83db5e63e0"),
         URLQueryItem(name: "per_page", value: "20"),
@@ -24,6 +24,7 @@ class FeedService: FeedProvider {
         completionHandler: @escaping (Result<FeedModel, NetworkServiceError>) -> ()
     ) {
         isPaginating = true
+        var queryItems = queryItems
         queryItems.append(URLQueryItem(name: "page", value: "\(page)"))
 
         guard var components = URLComponents(string: stringUrl) else { return }

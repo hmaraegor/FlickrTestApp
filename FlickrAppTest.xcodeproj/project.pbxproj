@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94E1155E29ED641700B9473D /* String+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1155D29ED641700B9473D /* String+Helpers.swift */; };
 		E66A387A28172275003C8E44 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A387928172275003C8E44 /* ViewControllerFactory.swift */; };
 		E66A387D28172C7E003C8E44 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A387C28172C7E003C8E44 /* PostView.swift */; };
 		E66A387F2817344A003C8E44 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66A387E2817344A003C8E44 /* ViewFactory.swift */; };
@@ -32,12 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94E1155D29ED641700B9473D /* String+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Helpers.swift"; sourceTree = "<group>"; };
 		E66A387928172275003C8E44 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		E66A387C28172C7E003C8E44 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		E66A387E2817344A003C8E44 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		E66A388128173D95003C8E44 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 		E66A388328173DB7003C8E44 /* FeedProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedProvider.swift; sourceTree = "<group>"; };
-		E6ED9AF628158E6F0033BC8B /* 3Commas-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3Commas-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6ED9AF628158E6F0033BC8B /* FlickrAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6ED9AF928158E6F0033BC8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6ED9AFB28158E6F0033BC8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E6ED9AFD28158E6F0033BC8B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +100,7 @@
 		E6ED9AED28158E6F0033BC8B = {
 			isa = PBXGroup;
 			children = (
-				E6ED9AF828158E6F0033BC8B /* 3Commas-test */,
+				E6ED9AF828158E6F0033BC8B /* FlickrAppTest */,
 				E6ED9AF728158E6F0033BC8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,12 +108,12 @@
 		E6ED9AF728158E6F0033BC8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E6ED9AF628158E6F0033BC8B /* 3Commas-test.app */,
+				E6ED9AF628158E6F0033BC8B /* FlickrAppTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E6ED9AF828158E6F0033BC8B /* 3Commas-test */ = {
+		E6ED9AF828158E6F0033BC8B /* FlickrAppTest */ = {
 			isa = PBXGroup;
 			children = (
 				E6ED9B292815BA470033BC8B /* Helpers */,
@@ -124,7 +126,7 @@
 				E6ED9B0428158E700033BC8B /* LaunchScreen.storyboard */,
 				E6ED9B0728158E700033BC8B /* Info.plist */,
 			);
-			path = "3Commas-test";
+			path = FlickrAppTest;
 			sourceTree = "<group>";
 		};
 		E6ED9B0D2815A1230033BC8B /* Scenes */ = {
@@ -198,6 +200,7 @@
 				E6ED9B2C2815BB9F0033BC8B /* UIView+Helper.swift */,
 				E6ED9B3128167E4F0033BC8B /* UIStackView+Helpers.swift */,
 				E6ED9B332816FC9F0033BC8B /* UIScreen+Helpers.swift */,
+				94E1155D29ED641700B9473D /* String+Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -214,9 +217,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E6ED9AF528158E6F0033BC8B /* 3Commas-test */ = {
+		E6ED9AF528158E6F0033BC8B /* FlickrAppTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6ED9B0A28158E700033BC8B /* Build configuration list for PBXNativeTarget "3Commas-test" */;
+			buildConfigurationList = E6ED9B0A28158E700033BC8B /* Build configuration list for PBXNativeTarget "FlickrAppTest" */;
 			buildPhases = (
 				E6ED9AF228158E6F0033BC8B /* Sources */,
 				E6ED9AF328158E6F0033BC8B /* Frameworks */,
@@ -226,11 +229,11 @@
 			);
 			dependencies = (
 			);
-			name = "3Commas-test";
+			name = FlickrAppTest;
 			packageProductDependencies = (
 			);
 			productName = "3Commas-test";
-			productReference = E6ED9AF628158E6F0033BC8B /* 3Commas-test.app */;
+			productReference = E6ED9AF628158E6F0033BC8B /* FlickrAppTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -248,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E6ED9AF128158E6F0033BC8B /* Build configuration list for PBXProject "3Commas-test" */;
+			buildConfigurationList = E6ED9AF128158E6F0033BC8B /* Build configuration list for PBXProject "FlickrAppTest" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -263,7 +266,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E6ED9AF528158E6F0033BC8B /* 3Commas-test */,
+				E6ED9AF528158E6F0033BC8B /* FlickrAppTest */,
 			);
 		};
 /* End PBXProject section */
@@ -305,6 +308,7 @@
 				E6ED9AFC28158E6F0033BC8B /* SceneDelegate.swift in Sources */,
 				E66A388228173D95003C8E44 /* ImageProvider.swift in Sources */,
 				E6ED9B112815A1660033BC8B /* FeedModel.swift in Sources */,
+				94E1155E29ED641700B9473D /* String+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +451,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NX67BD27T2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "3Commas-test/Info.plist";
+				INFOPLIST_FILE = FlickrAppTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -458,7 +462,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hmaraegor.-Commas-test";
+				PRODUCT_BUNDLE_IDENTIFIER = hmaraegor.FlickrAppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -475,7 +479,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NX67BD27T2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "3Commas-test/Info.plist";
+				INFOPLIST_FILE = FlickrAppTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -486,7 +490,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hmaraegor.-Commas-test";
+				PRODUCT_BUNDLE_IDENTIFIER = hmaraegor.FlickrAppTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -497,7 +501,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E6ED9AF128158E6F0033BC8B /* Build configuration list for PBXProject "3Commas-test" */ = {
+		E6ED9AF128158E6F0033BC8B /* Build configuration list for PBXProject "FlickrAppTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E6ED9B0828158E700033BC8B /* Debug */,
@@ -506,7 +510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6ED9B0A28158E700033BC8B /* Build configuration list for PBXNativeTarget "3Commas-test" */ = {
+		E6ED9B0A28158E700033BC8B /* Build configuration list for PBXNativeTarget "FlickrAppTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E6ED9B0B28158E700033BC8B /* Debug */,

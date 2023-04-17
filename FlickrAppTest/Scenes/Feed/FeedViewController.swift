@@ -48,7 +48,8 @@ class FeedViewController: UITableViewController {
             case .success(let feedResponse):
                 self.pagesCount = feedResponse.photos.pages
                 self.totalPosts = feedResponse.photos.total
-                self.photoPosts.append(contentsOf: feedResponse.photos.photo)
+                let photos = feedResponse.photos.photo.filter { $0.urlM.isNotEmpty }
+                self.photoPosts.append(contentsOf: photos)
                 self.nextPage += 1
             case .failure(let error):
                 ErrorAlertService.showErrorAlert(error: error, viewController: self)
