@@ -30,4 +30,14 @@ struct Photo: Codable {
         case heightM = "height_m"
         case widthM = "width_m"
     }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(String.self, forKey: .id)
+        self.owner = try container.decode(String.self, forKey: .owner)
+        self.title = try container.decode(String.self, forKey: .title)
+        self.urlM = try container.decodeIfPresent(String.self, forKey: .urlM) ?? ""
+        self.heightM = try container.decodeIfPresent(Int.self, forKey: .heightM) ?? 0
+        self.widthM = try container.decodeIfPresent(Int.self, forKey: .widthM) ?? 0
+    }
 }
