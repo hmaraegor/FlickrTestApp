@@ -34,7 +34,8 @@ class FeedPresenter: FeedPresenterProtocol {
             guard let self = self else { return }
             switch result {
             case .success(let feedModel):
-                self.posts.append(contentsOf: feedModel.photos.photo)
+                let photos = feedModel.photos.photo.filter { $0.urlM.isNotEmpty }
+                self.posts.append(contentsOf: photos)
                 self.pagesCount = feedModel.photos.pages
                 self.totalPosts = feedModel.photos.total
                 self.nextPage += 1
