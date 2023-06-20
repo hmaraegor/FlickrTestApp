@@ -1,6 +1,7 @@
 # FlickrTestApp
 
-It's a test task for employers
+It's a test task.
 
-There are 2 branches: _mvc-version_ (with MVC architecture), _mvp-version_ (with MVP architecture). 
-Also mvp-version is in the main.
+There are 2 branches: [_mvc-version_](https://github.com/hmaraegor/FlickrTestApp/tree/mvc-version) (MVC architecture), 
+[_mvp-version_](https://github.com/hmaraegor/FlickrTestApp/tree/mvp-version) (MVP architecture). 
+Also _mvp-version_ is in the main.
